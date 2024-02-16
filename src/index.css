@@ -2,13 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.bg-home{
+  @apply w-screen h-screen bg-[url('/background.jpg')] bg-cover bg-no-repeat
+}
+
+.menu-item{
+  @apply hover:text-lightgreen font-semibold
+}
+  :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424; 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,5 +26,5 @@
 a {
   font-weight: 500;
   text-decoration: inherit;
-}
+}  
 
