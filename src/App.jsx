@@ -3,13 +3,14 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Proyects from "./pages/Proyects";
-
+import ProjectDetails from "./pages/ProjectDetails";
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/proyects" element={<Proyects />} />
+				<Route path="/proyects/:id" element={<ProjectDetails />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/about" element={<About />} />
 			</Routes>
