@@ -12,17 +12,17 @@ function ToggleMenu() {
 	return (
 		<>
 			{toggle ? (
-				<div onClick={handleToggle} className="absolute top-3 right-3">
+				<div onClick={handleToggle} className="absolute top-3 right-3 z-20">
 					<GiHamburgerMenu color="white" size={35} />
 				</div>
 			) : (
-				<div onClick={handleToggle} className="absolute top-3 right-3">
+				<div onClick={handleToggle} className="absolute top-3 right-3 z-20">
 					<IoCloseSharp color="white" size={35} />
 				</div>
 			)}
 
 			{!toggle && (
-				<div className="text-white absolute top-12 right-7 w-36 h-2/5 rounded-3xl bg-gradient-to-tr from-slate-900 to-slate-200">
+				<div className="menu-container">
 					<div className="flex flex-col items-center text-2xl mt-10">
 						<span className="menu-item">
 							<Link to="/">Home </Link>
