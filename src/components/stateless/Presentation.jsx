@@ -5,7 +5,7 @@ import {
 	slideAnimation,
 } from "../../config/motion";
 import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaDribbble } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
@@ -29,18 +29,18 @@ const Presentation = ({ name, surname, skills }) => {
 					className="flex items-center justify-around w-[180px] h-10 mt-5"
 					{...homeContentAnimation}
 				>
-					<div>
+					<a href="https://github.com/Michaellinaresxk" target="_blank">
 						<FaGithub size={30} color="white" />
-					</div>
-					<div>
-						<FaInstagram size={30} color="white" />
-					</div>
-					<div>
+					</a>
+					<a href="https://dribbble.com/michaelxk" target="_blank">
+						<FaDribbble size={30} color="white" />
+					</a>
+					<a href="https://www.linkedin.com/in/michael-linares-abreu/" target="_blank">
 						<FaLinkedin size={30} color="white" />
-					</div>
-					<div>
+					</a>
+					<a href="https://www.youtube.com/@XkWeb/videos" target="_blank">
 						<FaYoutube size={30} color="white" />
-					</div>
+					</a>
 				</motion.div>
 			</motion.section>
 		</AnimatePresence>

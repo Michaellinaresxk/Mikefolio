@@ -12,7 +12,7 @@ function ToggleMenu() {
 	return (
 		<>
 			{toggle ? (
-				<div onClick={handleToggle} className="absolute top-3 right-3 z-20">
+				<div onClick={handleToggle} className="absolute top-8 right-8 z-20">
 					<GiHamburgerMenu color="white" size={35} />
 				</div>
 			) : (
