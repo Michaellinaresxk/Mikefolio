@@ -34,5 +34,14 @@ body{
 a {
   font-weight: 500;
   text-decoration: inherit;
-}  
+}
 
+.glass {
+	background-color: #233458;
+	backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(17, 25, 40, 0.25);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	padding: 2em;
+	filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+}
