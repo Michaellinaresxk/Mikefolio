@@ -20,9 +20,9 @@ const Proyects = () => {
 							image={project.CardImage}
 							title={project.title}
 							app_link={project.projectLinks}
-							repo_provider={project.repoProvider}
 							repo_link={project.repoLink}
 							id={project.id}
+							description={project.description}
 						/>
 					</div>
 				))}

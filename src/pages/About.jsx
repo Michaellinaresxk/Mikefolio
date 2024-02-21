@@ -4,7 +4,6 @@ const About = () => {
 	return (
 		<div className="text-white">
 			<ToggleMenu />
-			
 		</div>
 	);
 };
