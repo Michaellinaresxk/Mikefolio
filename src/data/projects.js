@@ -26,7 +26,6 @@ export const projects = [
 		CardImage: project1,
 		projectLinks: "https://word-translator-70f04.web.app/",
 		repoLink: "https://github.com/Michaelxk/Vue-Translator",
-		repoProvider: "GitHub",
 		technologies: [
 			"Git",
 			"Materialize",
@@ -51,7 +50,6 @@ export const projects = [
 		CardImage: project2,
 		projectLinks: "https://wizardly-spence-eb6793.netlify.app/gosia-recipe",
 		repoLink: "https://github.com/Michaelxk/Gosia-Recipe",
-		repoProvider: "GitHub",
 		technologies: [
 			"Git",
 			"Bootstrap-Vue",
@@ -77,7 +75,6 @@ export const projects = [
 		CardImage: project3,
 		projectLinks: "https://weight-on-space.web.app/",
 		repoLink: "https://github.com/Michaelxk/Weigt-on-space",
-		repoProvider: "GitHub",
 		technologies: [
 			"Git",
 			"Bootstrap-Vue",
@@ -106,7 +103,6 @@ export const projects = [
 		CardImage: project4,
 		projectLinks: "https://ninja-chat-42d79.firebaseapp.com/",
 		repoLink: "https://github.com/Michaelxk/ChatRoom",
-		repoProvider: "GitHub",
 		technologies: [
 			"Git",
 			"Vuetify",
@@ -134,7 +130,6 @@ export const projects = [
 		CardImage: project5,
 		projectLinks: "https://vue-weather-3d15c.firebaseapp.com/",
 		repoLink: "https://github.com/Michaelxk/Simple-Vue-WeatherApp",
-		repoProvider: "GitHub",
 		technologies: [
 			"Git",
 			"Fetch",
