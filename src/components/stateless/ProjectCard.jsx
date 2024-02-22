@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { FaEye, FaGithub } from "react-icons/fa";
+
 const ProjectCard = ({
 	image,
 	title,
