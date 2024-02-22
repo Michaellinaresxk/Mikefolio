@@ -1,5 +1,6 @@
 import Presentation from "../components/stateless/Presentation";
 import ToggleMenu from "../components/statefull/ToggleMenu";
+
 const Home = () => {
 	return (
 		<div className="bg-home transition-all ease-in">
