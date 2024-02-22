@@ -11,7 +11,7 @@ const About = () => {
 				</div>
 				<Footer text="Copyright Michaelxk ©" year={2024} />
 			</section>
-		</>	
+		</>
 	);
 };
 export default About;

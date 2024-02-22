@@ -9,9 +9,9 @@ const ProjectDetails = () => {
   let project = projects.find((pro) => pro.id === parseInt(id));
   return (
     <>
-      <ToggleMenu />
+      <Menu />
       <div className="mb-8">
-        <ProjectPresentation
+        <Heading
           title1={project.title1}
           title2={project.title2}
           subtitle={project.subtitle}
