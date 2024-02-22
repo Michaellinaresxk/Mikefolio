@@ -12,7 +12,7 @@ const Presentation = ({ title1, title2, subtitle }) => {
 		<AnimatePresence>
 			<motion.section
 				{...slideAnimation("left")}
-				className="flex flex-col absolute w-[700px] h-72 left-14 top-60"
+				className="flex flex-col"
 			>
 				<motion.div {...homeTextAnimation}>
 					<div className="text-4xl md:text-6xl lg:text-8xl font-semibold">
@@ -23,7 +23,7 @@ const Presentation = ({ title1, title2, subtitle }) => {
 					</div>
 				</motion.div>
 				<motion.div {...homeContentAnimation}>
-					<SocialMedia size={30} color="white" />
+					<SocialMedia size={30} color="white" />	
 				</motion.div>
 			</motion.section>
 		</AnimatePresence>

@@ -49,7 +49,7 @@ export const projects = [
 		description:
 			"Search for recipes using natural language queries, such as 'gluten free brownies without sugar' or 'low fat vegan cupcakes.' You can automatically calculate the nutritional information for any recipe, visualize ingredient lists, etc..",
 		CardImage: project2,
-		projectLinks: "https://wizardly-spence-eb6793.netlify.app/gosia-recipe",
+		projectLinks: "https://gosia-recipes.web.app/",
 		repoLink: "https://github.com/Michaelxk/Gosia-Recipe",
 		repoProvider: "GitHub",
 		technologies: [

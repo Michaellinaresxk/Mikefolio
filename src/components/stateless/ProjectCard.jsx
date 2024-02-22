@@ -3,47 +3,44 @@ import { Link } from "react-router-dom";
 import { FaEye, FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({
-	image,
-	title,
-	repo_link,
-	app_link,
-	repo_provider,
-	id,
+  image,
+  title,
+  repo_link,
+  app_link,
+  id,
+  description,
+	repoProvider,
 }) => {
-	return (
-		<>
-			<div className="block max-w-[18rem] rounded-lg bg-slate-600 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-				<Link to={`/proyects/${id}`}>
-					<div className="relative overflow-hidden bg-cover bg-no-repeat hover:bg-blend-darken">
-						<img
-							className="rounded-t-lg border-2 border-white hover:border-lightgreen hover:brightness-75"
-							src={image}
-							alt=""
-						/>
-					</div>
-				</Link>
-				<div className="p-6 mt-1">
-					<div className="text-base text-neutral-600 dark:text-neutral-200">
-						<div className="flex items-center bg-white hover:bg-lightgreen h-8 rounded-xl">
-							<div className="ml-2">
-								<FaEye />
-							</div>
-							<a className="ml-1" href={app_link} target="_blank">
-								<span>{title}</span>
-							</a>
-						</div>
-						<div className="flex items-center bg-black hover:bg-lightgreen hover:text-black mt-3 text-white h-8 rounded-xl">
-							<div className="ml-2">
-								<FaGithub color="white" />
-							</div>
-							<a className="ml-1" href={repo_link} target="_blank">
-								<span>{repo_provider}</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className="bg-white   max-w-sm rounded-lg overflow-hidden mx-auto ">
+        <Link to={`/proyects/${id}`}>
+          <img src={image} className="w-full" />
+        </Link>
+        <div className="px-6 py-4">
+          <h3 className="text-[#333] text-xl font-bold">{title}</h3>
+          <p className="text-gray-600 text-base mt-3">
+            {description.length > 120
+              ? `${description.substring(0, 120)}...`
+              : description}
+          </p>
+        </div>
+        <div className="px-6 py-4 flex text-gray-600">
+          <a className="flex" href={repo_link} target="_blank">
+            <span className="flex bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold mr-2">
+						<FaGithub className="mr-2" size={20}  />
+						{repoProvider}
+            </span>
+          </a>
+          <a className="flex" href={app_link} target="_blank">
+            <span className="flex bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold mr-2">
+						<FaEye className="mr-2" size={20} />
+             {title}
+            </span>
+          </a>
+        </div>
+      </div>
+    </>
+  );
 };
 export default ProjectCard;
