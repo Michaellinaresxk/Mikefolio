@@ -1,13 +1,12 @@
 import { useParams } from "react-router-dom";
-import ToggleMenu from "../components/statefull/ToggleMenu";
-import ProjectPresentation from "../components/stateless/ProjectPresentation";
+import Menu from "../components/stateless/Menu";
+import Heading from "../components/stateless/Heading";
 import Footer from "../components/stateless/Footer";
 import { projects } from "../data/projects";
 
 const ProjectDetails = () => {
   let { id } = useParams();
   let project = projects.find((pro) => pro.id === parseInt(id));
-
   return (
     <>
       <ToggleMenu />
@@ -62,4 +61,5 @@ const ProjectDetails = () => {
     </>
   );
 };
+
 export default ProjectDetails;

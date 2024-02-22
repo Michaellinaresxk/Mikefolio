@@ -68,3 +68,49 @@ export const homeContainerAnimation = {
 	animate: { x: 0, opacity: 1, transition: { ...transition, delay: 0 } },
 	exit: { x: -100, opacity: 0, transition: { ...transition, delay: 0 } },
 };
+
+export const sidebar = {
+	open: (width = 300) => ({
+		clipPath: `circle(${width * 2 + 200}px at calc(100% - 40px) 40px)`,
+		transition: {
+			type: "spring",
+			stiffness: 20,
+			restDelta: 2,
+		},
+	}),
+	closed: {
+		clipPath: "circle(30px at calc(100% - 40px) 40px)",
+		transition: {
+			delay: 0.5,
+			type: "spring",
+			stiffness: 400,
+			damping: 40,
+		},
+	},
+};
+
+export const variants_menu_items = {
+	open: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			y: { stiffness: 1000, velocity: -100 },
+		},
+	},
+	closed: {
+		y: 50,
+		opacity: 0,
+		transition: {
+			y: { stiffness: 1000 },
+		},
+	},
+};
+
+export const variants_navigation = {
+	open: {
+		transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+	},
+	closed: {
+		transition: { staggerChildren: 0.05, staggerDirection: -1 },
+	},
+};

@@ -1,6 +1,6 @@
 import ProjectCard from "../components/stateless/ProjectCard";
-import ToggleMenu from "../components/statefull/ToggleMenu";
-import ProjectPresentation from "../components/stateless/ProjectPresentation";
+import Menu from "../components/stateless/Menu";
+import Heading from "../components/stateless/Heading";
 import Footer from "../components/stateless/Footer";
 import { projects } from "../data/projects";
 
@@ -26,9 +26,9 @@ const Proyects = () => {
 							repoProvider={project.repoProvider}
 						/>
 					</div>
-				))}
-			</div>
-			<Footer text="Copyright Michaelxk ©" year="2024" />
+				</div>
+				<Footer text="Copyright Michaelxk ©" year="2024" />
+			</section>
 		</>
 	);
 };

@@ -1,4 +1,3 @@
-
 import ContactForm from "../components/stateless/ContactForm";
 import Footer from "../components/stateless/Footer";
 
