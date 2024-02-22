@@ -23,6 +23,7 @@ const Proyects = () => {
 							repo_link={project.repoLink}
 							id={project.id}
 							description={project.description}
+							repoProvider={project.repoProvider}
 						/>
 					</div>
 				))}
