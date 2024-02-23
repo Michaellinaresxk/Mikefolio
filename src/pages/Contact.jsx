@@ -1,5 +1,8 @@
 import ContactForm from "../components/stateless/ContactForm";
 import Menu from "../components/stateless/Menu";
+import SocialMedia from "../components/stateless/SocialMedia";
+import Heading from "../components/stateless/Heading";
+
 import Footer from "../components/stateless/Footer";
 
 const stats = [
