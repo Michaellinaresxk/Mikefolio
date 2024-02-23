@@ -23,7 +23,7 @@ const Presentation = ({ title1, title2, subtitle }) => {
 					</div>
 				</motion.div>
 				<motion.div {...homeContentAnimation}>
-					<SocialMedia size={30} color="white" />	
+					<SocialMedia size={30} color="white" />
 				</motion.div>
 			</motion.section>
 		</AnimatePresence>
