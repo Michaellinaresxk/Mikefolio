@@ -6,7 +6,7 @@ import { variants_menu_items, variants_navigation } from "../../config/motion";
 const Navigation = () => (
 	<motion.ul
 		variants={variants_navigation}
-		className="p-6 absolute top-16 right-6  w-[230px] z-50"
+		className="p-6 absolute top-20 right-24  w-[230px] z-50"
 	>
 		{itemIds.map((i) => (
 			<MenuItem i={i} key={i} />
