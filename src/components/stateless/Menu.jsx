@@ -19,7 +19,7 @@ const Menu = () => {
 			ref={containerRef}
 		>
 			<motion.div
-				className="absolute top-0 right-0 bottom-0 w-[310px] bg-black/75"
+				className="absolute top-0 right-0 bottom-0 w-[450px] h-screen bg-black/75"
 				variants={sidebar}
 			/>
 			<Navigation />

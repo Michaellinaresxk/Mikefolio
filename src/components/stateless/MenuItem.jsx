@@ -15,7 +15,7 @@ const MenuItem = ({ i }) => {
 			whileTap={{ scale: 0.95 }}
 		>
 			<Link to={routes[i]}>
-				<span className="w-[200px] h-[20px] text-2xl ml-2 hover:text-lightgreen">
+				<span className="w-[200px] h-[20px] text-4xl ml-2 hover:text-lightgreen">
 					{links[i]}
 				</span>
 			</Link>
