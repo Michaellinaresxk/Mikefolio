@@ -45,15 +45,25 @@ const ProjectDetails = () => {
                 <div className="bg-lightgreen h-1 w-16 mb-10"></div>
                 <div className="flex flex-wrap -m-1">
                   {project.technologies.map((technology, index) => (
-           <div key={index} className="m-1">
-           <span className="inline-flex items-center px-4 py-1 border border-white text-sm font-medium rounded-full shadow-sm text-white bg-transparent hover:bg-lightgreen hover:black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-             </svg>
-             {technology}
-           </span>
-         </div>
-         
+                    <div key={index} className="m-1 mr-5">
+                      <span className="inline-flex items-center px-4 py-1 border border-white text-sm font-medium rounded-full shadow-sm text-white bg-transparent hover:bg-lightgreen hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5 mr-2 -ml-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        {technology}
+                      </span>
+                    </div>
                   ))}
                 </div>
               </div>
