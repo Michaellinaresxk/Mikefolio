@@ -14,7 +14,7 @@ const Navigation = () => (
 		<motion.div variants={variants_menu_items}>
 			<img
 				src={photo1}
-				className="w-[180px] h-[180px] rounded-full mt-10 border border-transparent photo-animation"
+				className="w-[180px] h-[180px] rounded-full mt-20 border border-transparent photo-animation"
 			/>
 		</motion.div>
 	</motion.ul>

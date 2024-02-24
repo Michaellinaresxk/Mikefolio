@@ -9,7 +9,7 @@ import { links } from "../../config/constans";
 const MenuItem = ({ i }) => {
 	return (
 		<motion.li
-			className="m-0 p-0 list-none mb-5 flex items-center justify-center cursor-pointer"
+			className="m-0 p-0 list-none mb-10 flex items-center justify-center mt-8 cursor-pointer"
 			variants={variants_menu_items}
 			whileHover={{ scale: 1.1 }}
 			whileTap={{ scale: 0.95 }}
