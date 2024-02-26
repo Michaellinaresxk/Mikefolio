@@ -1,2 +1,2 @@
-export const links = ["Home", "My Work", "Contact", "About"];
-export const routes = ["/", "/proyects", "/contact", "/about"];
+export const links = ["Home", "My Work", "About", "Contact"];
+export const routes = ["/", "/proyects", "/about", "/contact"];

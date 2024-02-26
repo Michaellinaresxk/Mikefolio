@@ -43,26 +43,27 @@ const ProjectDetails = () => {
               <div className="">
                 <h2 className=" mb-4 text-white text-3xl">Technologies:</h2>
                 <div className="bg-lightgreen h-1 w-16 mb-10"></div>
-                <div className="flex flex-wrap -m-1">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-4 mt-2.5">
                   {project.technologies.map((technology, index) => (
-                    <div key={index} className="m-1 mr-5">
-                      <span className="inline-flex items-center px-4 py-1 border border-white text-sm font-medium rounded-full shadow-sm text-white bg-transparent hover:bg-lightgreen hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5 mr-2 -ml-1"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        {technology}
-                      </span>
+                    <div
+                      key={index}
+                      className="flex items-center text-white p-1 rounded-lg"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-6 h-6 mx-2 text-lightgreen"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      <span className="mx-2">{technology}</span>
                     </div>
                   ))}
                 </div>

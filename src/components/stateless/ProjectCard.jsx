@@ -17,6 +17,8 @@ const ProjectCard = ({
         <Link to={`/proyects/${id}`}>
           <img src={image} className="w-full" />
         </Link>
+
+
         <div className="px-6 py-4">
           <h3 className="text-[#333] text-xl font-bold">{title}</h3>
           <p className="text-gray-600 text-base mt-3">

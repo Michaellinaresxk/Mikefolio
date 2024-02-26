@@ -102,7 +102,7 @@ export const projects = [
 		title1: "Chat",
 		title2: "Room",
 		subtitle: '"Root Access" for Super Users...',
-		description: "Simple testing chat room app.",
+		description: "Simple testing chat room app, easy to use, is a tipical chat room hall",
 		CardImage: project4,
 		projectLinks: "https://ninja-chat-42d79.firebaseapp.com/",
 		repoLink: "https://github.com/Michaelxk/ChatRoom",
