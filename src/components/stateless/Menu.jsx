@@ -12,7 +12,7 @@ const Menu = () => {
 
 	return (
 		<motion.nav
-			className="absolute top-0 z-50 bottom-0 right-0 w-[68px]"
+		className="absolute top-5 right-5 z-50 bottom-0 w-[68px]"
 			initial={false}
 			animate={isOpen ? "open" : "closed"}
 			custom={height}

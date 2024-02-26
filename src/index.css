@@ -10,6 +10,7 @@ body{
   @apply w-screen h-screen bg-[url('/src/assets/img/bg.jpg')] bg-cover bg-no-repeat
 }
 
+
 .menu-container{
 @apply text-white absolute top-12 right-7 w-36 h-2/5 rounded-3xl bg-gradient-to-tr from-slate-900 to-slate-200 z-20
 }
@@ -47,7 +48,7 @@ body{
   font-weight: 400;
 
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; 
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -58,7 +59,7 @@ body{
 a {
   font-weight: 500;
   text-decoration: inherit;
-} 
+}
 
 @keyframes border-animation {
   0% {
@@ -74,12 +75,3 @@ a {
   }
 }
 
-.glass {
-	background-color: #233458;
-	backdrop-filter: blur(16px) saturate(180%);
-	background-color: rgba(17, 25, 40, 0.25);
-	border-radius: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.125);
-	padding: 2em;
-	filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
-}
