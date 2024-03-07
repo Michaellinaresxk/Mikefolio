@@ -13,7 +13,7 @@ const Projects = () => {
                 title2="Work"
                 subtitle="Explore my projects"
             />
-            <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr sm:w-5/6 md:w-4/5 lg:w-5/6 mx-auto cursor-pointer mt-8 mb-16">
+            <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr sm:w-5/6 md:w-4/5 lg:w-5/6 mx-auto cursor-pointer mt-20 mb-16">
                 {projects.map((project) => (
                     <div key={project.id} className="mx-auto">
                         <ProjectCard

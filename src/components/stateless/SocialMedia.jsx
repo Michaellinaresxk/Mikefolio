@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { FaDribbble } from "react-icons/fa"; 
+import { FaDribbble } from "react-icons/fa";
 
 const SocialMedia = ({ size, color }) => {
 	return (

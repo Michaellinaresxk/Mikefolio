@@ -32,7 +32,7 @@ export const projects = [
 			"Materialize",
 			"Vue.JS",
 			"Vue-Resourse",
-			"REST API: Yandex",
+			"API: Yandex",
 			"Firebase",
 		],
 		whatIImprube: [
@@ -57,7 +57,7 @@ export const projects = [
 			"Bootstrap-Vue",
 			"Vue.JS",
 			"Axios",
-			"REST API: Food Nutrition (Rapid-Api)",
+			"API: Food Nutrition",
 			"Firebase",
 		],
 		whatIImprube: [
@@ -84,7 +84,7 @@ export const projects = [
 			"Vue.JS",
 			"Vuex",
 			"Axios",
-			"REST API: Food Nutrition (Rapid-Api)",
+			"API: Nasa",
 			"Firebase",
 		],
 		whatIImprube: [
@@ -113,7 +113,7 @@ export const projects = [
 			"Vue.JS",
 			"Vue-Router",
 			"Moment",
-			"REST API: Yandex",
+			"API: Yandex",
 			"Firebase",
 		],
 		whatIImprube: [
@@ -139,7 +139,7 @@ export const projects = [
 			"Git",
 			"Fetch",
 			"Vue.JS",
-			"REST API: openweathermap",
+			"API: openweathermap",
 			"Firebase",
 		],
 		whatIImprube: [],
