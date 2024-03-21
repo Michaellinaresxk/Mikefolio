@@ -1,6 +1,10 @@
+
+
 export default function ContactForm() {
   return (
     <div className="isolate px-6 py-24 sm:py-32 lg:px-8">
+      <h3 className="text-2xl mb-10 mt-6 text-center"></h3>
+
         <h2 className="text-3xl text-center  font-bold  sm:text-4xl">Get In Touch</h2>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-1">

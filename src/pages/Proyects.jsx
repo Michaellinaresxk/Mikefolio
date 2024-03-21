@@ -1,6 +1,7 @@
 import ProjectCard from "../components/stateless/ProjectCard";
 import Menu from "../components/stateless/Menu";
 import Heading from "../components/stateless/Heading";
+import CallToAction from "../components/stateless/CallToAction";
 import Footer from "../components/stateless/Footer";
 import { projects } from "../data/projects";
 
@@ -28,6 +29,7 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
+            <CallToAction />
             <Footer text="Copyright Michaelxk ©" year="2024" />
         </>
     );

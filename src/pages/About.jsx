@@ -1,19 +1,72 @@
 import Menu from "../components/stateless/Menu";
 import CallToAction from "../components/stateless/CallToAction";
 import Footer from "../components/stateless/Footer";
+import { FiMonitor } from 'react-icons/fi'; // Importa el icono que prefieras
+import { MdDeveloperMode } from 'react-icons/md'; 
 
 const About = () => {
   return (
     <>
       <section className="min-h-screen flex flex-col">
         <Menu />
+        <div className="relative bg-dark-blue text-white font-sans">
+      <div className="container mx-auto px-6 py-20 text-center">
+        <div className="uppercase tracking-wide text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+          <span className="text-gray-300">We</span> are a gateway to success
+        </div>
+        <div className="flex justify-center items-center">
+          {/* Asumiendo que la figura geométrica se encuentra aquí */}
+          <div className="absolute z-0 w-48 h-48 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-50"></div>
+          <h1 className="relative z-10 text-6xl md:text-8xl lg:text-9xl xl:text-[10rem] leading-none font-extrabold tracking-tight">
+            Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">Michael</span>
+          </h1>
+        </div>
+        <div className="mt-8 md:mt-12 lg:mt-16">
+          <a href="#latest-project" className="inline-block text-sm md:text-base lg:text-lg font-medium leading-loose text-indigo-200 hover:text-indigo-100">
+            Latest Project <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div className="mt-2 md:mt-4 lg:mt-6 text-sm md:text-base lg:text-lg">
+          <span className="text-gray-300">[ Scroll ]</span>
+        </div>
+      </div>
+    </div>
+        <article>
+    <div className="bg-gray-900 text-gray-100 p-10 md:p-20">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12 md:mb-20">
+          <h2 className="text-5xl md:text-4xl mb-4 text-3xl font-bold tracking-wide lg:text-5xl">I can help you with:</h2>
+          <p className="max-w-xl mx-auto">
+            Choose a service that fits your needs and learn more about how I can contribute to your project.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-12 gap-8 items-start">
+          <div className="md:col-span-5">
+            <h3 className="text-xl md:text-2xl font-medium mb-3">
+              <FiMonitor className="text-5xl mr-4 transition-transform transform hover:scale-125" />
+              Design</h3>
+            <p className="text-sm md:text-base">
+              With a proven history of crafting websites and apps, I bring forth robust and user-centric digital designs. The cornerstone of any successful website lies in a firm corporate branding.
+            </p>
+          </div>
+          <div className="md:col-span-7">
+            <h3 className="text-xl md:text-2xl font-medium mb-3">
+            <MdDeveloperMode className="text-4xl mr-4 transition-transform transform hover:scale-125" />Development</h3>
+            <p className="text-sm md:text-base">
+              I construct scalable websites from the ground up, seamlessly aligning them with the design. My primary emphasis lies in micro animations, transitions, and interactivity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+        </article>
         <section className="bg-white dark:bg-gray-800">
           <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
             <div className="w-full lg:w-1/2">
               <div className="lg:max-w-lg">
-                <h1 className="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-5xl">
+                <h2 className="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-5xl">
                   Easiest way to create your website
-                </h1>
+                </h2>
 
                 <div className="mt-8 space-y-5">
                   <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
