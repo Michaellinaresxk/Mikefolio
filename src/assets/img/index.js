@@ -5,3 +5,4 @@ import about_background_image from "./banner.jpg";
 import timeline_background from "./bg-hero-1024x601-copy.jpg";
 
 export { photo1, phot02, background_image, about_background_image, timeline_background };
+
