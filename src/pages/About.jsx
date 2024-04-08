@@ -4,9 +4,6 @@ import Footer from "../components/stateless/Footer";
 import { FiMonitor } from "react-icons/fi"; // Importa el icono que prefieras
 import { MdDeveloperMode } from "react-icons/md";
 import { about_background_image } from "../assets/img/index";
-// import { CreativeTitleBanner } from "../components/stateless/CreativeTitleBanner";
-
-// import TimeLine from "../components/stateless/TimeLine";
 
 const About = () => {
   return (

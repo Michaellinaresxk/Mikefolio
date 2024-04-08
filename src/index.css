@@ -7,14 +7,16 @@ body{
 }
 
 .bg-home{
-  @apply w-screen h-screen bg-[url('/src/assets/img/bg.jpg')] bg-cover bg-no-repeat
+  @apply w-screen h-screen bg-[url('/src/assets/img/astronaut.png')] bg-cover bg-no-repeat
 }
 
+.about-banner  {
+  background-color: #000;;
+}
 
 .menu-container{
 @apply text-white absolute top-12 right-7 w-36 h-2/5 rounded-3xl bg-gradient-to-tr from-slate-900 to-slate-200 z-20
 }
-
 .menu-item{
   @apply hover:text-lightgreen font-semibold
 }
@@ -87,10 +89,114 @@ a {
   rotate: 8deg;
 }
 
+
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.BG_github {
+  background: #181818;
+}
+
+.BG_youtube {
+  background: #ff0000;
+}
+
+.BG_dribble {
+  background: #ea4c89;
+}
+.BG_linkedin {
+  background: #0077b5;
+}
+.BG_dribble {
+  background: #ea4c89;
+}
+
+
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(255, 110, 110, 0.466);
+  background-color: rgba(219, 219, 219, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
 .footer,
 .project-details__technologies,
 .project-details__improobe,
 .project-details__description {
   background-color: #171717;
   border-radius: 20px;
+}
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
 }

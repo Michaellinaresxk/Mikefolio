@@ -78,7 +78,6 @@ const Contact = () => {
             </dl>
           </div>
         </div>
-
         <ContactForm />
       </div>
         <Footer text="Copyright Michaelxk ©" year="2024" />

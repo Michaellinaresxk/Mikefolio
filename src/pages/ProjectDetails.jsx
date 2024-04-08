@@ -4,6 +4,7 @@ import Heading from "../components/stateless/Heading";
 import Footer from "../components/stateless/Footer";
 import { projects } from "../data/projects";
 import { FaEye } from "react-icons/fa";
+import CallToAction from "../components/stateless/CallToAction";
 
 const ProjectDetails = () => {
   let { id } = useParams();
@@ -103,7 +104,7 @@ const ProjectDetails = () => {
           </div>
         </section>
       </div>
-
+      <CallToAction />
       <Footer text="Copyright Michaelxk ©" year="2024" />
     </>
   );
