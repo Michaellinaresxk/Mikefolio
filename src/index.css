@@ -7,14 +7,16 @@ body{
 }
 
 .bg-home{
-  @apply w-screen h-screen bg-[url('/src/assets/img/bg.jpg')] bg-cover bg-no-repeat
+  @apply w-screen h-screen bg-[url('/src/assets/img/astronaut.png')] bg-cover bg-no-repeat
 }
 
+.about-banner  {
+  background-color: #000;;
+}
 
 .menu-container{
 @apply text-white absolute top-12 right-7 w-36 h-2/5 rounded-3xl bg-gradient-to-tr from-slate-900 to-slate-200 z-20
 }
-
 .menu-item{
   @apply hover:text-lightgreen font-semibold
 }
