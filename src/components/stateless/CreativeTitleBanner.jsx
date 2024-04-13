@@ -1,4 +1,4 @@
-const CreativeTitleBanner = () => {
+export const CreativeTitleBanner = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="font-bold text-6xl md:text-8xl lg:text-9xl leading-none tracking-tighter">
@@ -17,4 +17,3 @@ const CreativeTitleBanner = () => {
     </div>
   );
 };
-export default CreativeTitleBanner;

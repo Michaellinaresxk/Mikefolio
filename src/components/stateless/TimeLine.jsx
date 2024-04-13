@@ -4,21 +4,14 @@ export const Timeline = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="w-full md:w-1/2">
-        {/* Timeline goes here */}
         <div className="relative">
-          {/* Line connecting items */}
           <div className="absolute left-2 top-0 bottom-0 w-0.5 bg-gray-300"></div>
           <TimelineItem />
           <TimelineItem />
-          {/* Add more TimelineItems as needed */}
         </div>
       </div>
       <div className="w-full md:w-1/2">
-        {/* Background image */}
-        <div
-          className="h-screen bg-cover bg-right"
-          style={{ backgroundImage: timeline_background }}
-        ></div>
+        <div className="h-screen bg-cover bg-right"></div>
       </div>
     </div>
   );

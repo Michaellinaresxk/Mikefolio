@@ -1,6 +1,5 @@
 import Presentation from "../components/stateless/Presentation";
 import Menu from "../components/stateless/Menu";
-import CreativeTitleBanner from "../components/stateless/CreativeTitleBanner";
 
 const Home = () => {
   return (
@@ -15,7 +14,6 @@ const Home = () => {
           />
         </div>
       </div>
-      <CreativeTitleBanner />
     </main>
   );
 };
