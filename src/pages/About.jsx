@@ -3,7 +3,12 @@ import CallToAction from "../components/stateless/CallToAction";
 import Footer from "../components/stateless/Footer";
 import { FiMonitor } from "react-icons/fi"; // Importa el icono que prefieras
 import { MdDeveloperMode } from "react-icons/md";
-import { about_background_image } from "../assets/img/index";
+import { AboutMeText } from "../components/stateless/AboutMeText";
+import {
+  about_background_image,
+  myPicture,
+  spaceShip,
+} from "../assets/img/index";
 
 const About = () => {
   return (
@@ -46,9 +51,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* <CreativeTitleBanner /> */}
-        {/* <img src={} alt="" style={{ width: "500px" }} /> */}
-        {/* <TimeLine /> */}
+
         {/* <article>
           <div className="bg-gray-900 text-gray-100 p-10 md:p-20">
             <div className="max-w-7xl mx-auto">
@@ -75,33 +78,37 @@ const About = () => {
                   </p>
                 </div>
                 <div className="md:col-span-7">
-                  <h3 className="text-xl md:text-2xl font-medium mb-3">
-                    <MdDeveloperMode className="text-4xl mr-4 transition-transform transform hover:scale-125" />
-                    Development
-                  </h3>
-                  <p className="text-sm md:text-base">
-                    I construct scalable websites from the ground up, seamlessly
-                    aligning them with the design. My primary emphasis lies in
-                    micro animations, transitions, and interactivity.
-                  </p>
+                  <img
+                    className="object-cover w-full h-full max-w-lg mx-auto"
+                    src={spaceShip}
+                    alt="Descriptive Alt Text"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </article>
-        <section className="bg-white dark:bg-gray-800">
-          <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+        </article> */}
+        <AboutMeText />
+        <section>
+          <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:space-y-0 lg:flex-row lg:items-center">
+            <div className="flex items-center justify-center w-full lg:w-1/2">
+              <img
+                className="object-cover w-full h-full max-w-lg mx-auto rounded-md"
+                src={myPicture}
+                alt="Descriptive Alt Text"
+              />
+            </div>
             <div className="w-full lg:w-1/2">
-              <div className="lg:max-w-lg">
-                <h2 className="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-5xl">
-                  Easiest way to create your website
+              <div>
+                <h2 className="text-3xl font-bold tracking-wide text-gray-800 text-white lg:text-5xl">
+                  Creting modern and innovative design,
                 </h2>
 
                 <div className="mt-8 space-y-5">
-                  <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                  <p className="flex items-center -mx-2 text-gray-700s">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 mx-2 text-blue-500"
+                      className="w-6 h-6 mx-2 text-orange-500"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -113,14 +120,15 @@ const About = () => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-
-                    <span className="mx-2">Clean and Simple Layout</span>
+                    <span className="mx-2 text-2xl text-white">
+                      Easy to use
+                    </span>
                   </p>
 
                   <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 mx-2 text-blue-500"
+                      className="w-6 h-6 mx-2 text-orange-500"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -132,14 +140,15 @@ const About = () => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-
-                    <span className="mx-2">Just Copy Paste Codeing</span>
+                    <span className="mx-2 text-2xl text-white">
+                      Esthetically pleasing
+                    </span>
                   </p>
 
                   <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 mx-2 text-blue-500"
+                      className="w-6 h-6 mx-2 text-orange-500"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -151,39 +160,15 @@ const About = () => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-
-                    <span className="mx-2">Easy to Use</span>
+                    <span className="mx-2 text-2xl text-white">
+                      Easy to Use
+                    </span>
                   </p>
                 </div>
               </div>
-
-              <div className="w-full mt-8 bg-transparent border rounded-md lg:max-w-sm dark:border-gray-700 focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-400 focus-within:ring-opacity-40">
-                <form className="flex flex-col lg:flex-row">
-                  <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    className="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0"
-                  />
-
-                  <button
-                    type="button"
-                    className="h-10 px-4 py-2 m-1 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
-                  >
-                    Join Us
-                  </button>
-                </form>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-              <img
-                className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl"
-                src="https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt="glasses photo"
-              />
             </div>
           </div>
-        </section> */}
+        </section>
 
         <CallToAction />
       </section>
