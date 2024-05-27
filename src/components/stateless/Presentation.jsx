@@ -10,12 +10,15 @@ import {
 const Presentation = ({ title1, title2, subtitle }) => {
   return (
     <AnimatePresence>
-      <motion.section {...slideAnimation("left")} className="flex flex-col">
+      <motion.section
+        {...slideAnimation("left")}
+        className="flex flex-col mt-20"
+      >
         <motion.div {...homeTextAnimation}>
-          <div className="text-4xl md:text-6xl lg:text-9xl font-semibold">
-            {title1} <span className="text-lightgreen">{title2}</span>
+          <div className="text-6xl md:text-6xl lg:text-9xl font-semibold">
+            {title1} <span className="text-orange-500">{title2}</span>
           </div>
-          <div className="text-[16px] font-semibold md:text-2xl lg:text-3xl mt-5">
+          <div className="text-[20px] font-semibold md:text-xl lg:text-2xl mt-5">
             {subtitle}
           </div>
         </motion.div>

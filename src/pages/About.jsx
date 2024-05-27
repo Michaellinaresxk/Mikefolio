@@ -4,6 +4,10 @@ import Footer from "../components/stateless/Footer";
 import { FiMonitor } from "react-icons/fi"; // Importa el icono que prefieras
 import { MdDeveloperMode } from "react-icons/md";
 import { AboutMeText } from "../components/stateless/AboutMeText";
+import { ProfileCvSection } from "../components/stateless/ProfileCvSection";
+import { ExperienceSection } from "../components/stateless/ExperienceSection";
+import { WhatIUse } from "../components/stateless/WhatIUse";
+
 import {
   about_background_image,
   myPicture,
@@ -46,54 +50,31 @@ const About = () => {
                 Latest Project <span aria-hidden="true">→</span>
               </a>
             </div>
-            <div className="mt-2 md:mt-4 lg:mt-6 text-sm md:text-base lg:text-lg">
-              <span className="text-gray-300">[ Scroll ]</span>
-            </div>
           </div>
         </div>
 
-        {/* <article>
-          <div className="bg-gray-900 text-gray-100 p-10 md:p-20">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-12 md:mb-20">
-                <h2 className="text-5xl md:text-4xl mb-4 text-3xl font-bold tracking-wide lg:text-5xl">
-                  I can help you with:
-                </h2>
-                <p className="max-w-xl mx-auto">
-                  Choose a service that fits your needs and learn more about how
-                  I can contribute to your project.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-12 gap-8 items-start">
-                <div className="md:col-span-5">
-                  <h3 className="text-xl md:text-2xl font-medium mb-3">
-                    <FiMonitor className="text-5xl mr-4 transition-transform transform hover:scale-125" />
-                    Design
-                  </h3>
-                  <p className="text-sm md:text-base">
-                    With a proven history of crafting websites and apps, I bring
-                    forth robust and user-centric digital designs. The
-                    cornerstone of any successful website lies in a firm
-                    corporate branding.
-                  </p>
-                </div>
-                <div className="md:col-span-7">
-                  <img
-                    className="object-cover w-full h-full max-w-lg mx-auto"
-                    src={spaceShip}
-                    alt="Descriptive Alt Text"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </article> */}
+        <div className="flex justify-center items-center">
+          <img
+            src={spaceShip}
+            alt="space chip image"
+            className="about-space-ship"
+          />
+        </div>
+
         <AboutMeText />
+        <ExperienceSection />
+        <ProfileCvSection resumeLink="/path-to-your-resume.pdf" />
+        <CallToAction />
         <section>
-          <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:space-y-0 lg:flex-row lg:items-center">
+          <div className="flex justify-center mt-20">
+            <h2 className="text-7xl font-bold mt-10">
+              What i <span className="font-normal text-orange-500">Do</span>
+            </h2>
+          </div>
+          <div className="container flex flex-col px-6  mx-auto space-y-6 lg:space-y-0 lg:flex-row lg:items-center">
             <div className="flex items-center justify-center w-full lg:w-1/2">
               <img
-                className="object-cover w-full h-full max-w-lg mx-auto rounded-md"
+                className="object-cover w-full h-full max-w-lg mx-auto"
                 src={myPicture}
                 alt="Descriptive Alt Text"
               />
@@ -169,8 +150,7 @@ const About = () => {
             </div>
           </div>
         </section>
-
-        <CallToAction />
+        <WhatIUse />
       </section>
       <Footer text="Copyright Michaelxk ©" year={2024} />
     </>
