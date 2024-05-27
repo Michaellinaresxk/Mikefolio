@@ -18,7 +18,7 @@ export const ExperienceSection = () => {
   ];
 
   return (
-    <section className="w-9/10 p-10">
+    <section className="w-8/10 p-10">
       <h2 className="text-7xl font-bold mb-20">
         Experience <span className="font-normal text-orange-500">History</span>
       </h2>

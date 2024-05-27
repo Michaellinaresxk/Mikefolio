@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <>
       <Menu />
-      <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 bg-contact">
+      <div className="relative isolate overflow-hidden bg-orange py-24 sm:py-32 bg-contact">
         {/* <img
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
@@ -55,7 +55,7 @@ const Contact = () => {
               Social Media
             </h2>
 
-            <div className="bg-lightgreen h-1 w-16 mb-10"></div>
+            <div className="bg-orange-500 h-1 w-16 mb-10"></div>
             <SocialMedia size={30} />
             <div className="text-2xl mb-10 mt-6">
               Whether you're looking to discuss the latest trends, decode the
@@ -66,7 +66,7 @@ const Contact = () => {
             <h2 className="mt-20 mb-5 text-3xl font-bold  sm:text-4xl">
               Links
             </h2>
-            <div className="bg-lightgreen h-1 w-16 mb-10"></div>
+            <div className="bg-orange-500 h-1 w-16 mb-10"></div>
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-5">
               {stats.map((link) => (
                 <a key={link.name} href={link.href} target="_blank">
@@ -80,7 +80,7 @@ const Contact = () => {
         </div>
         <ContactForm />
       </div>
-        <Footer text="Copyright Michaelxk ©" year="2024" />
+      <Footer text="Copyright Michaelxk ©" year="2024" />
     </>
   );
 };

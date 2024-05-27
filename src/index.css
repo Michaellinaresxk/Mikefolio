@@ -7,7 +7,7 @@ body{
 }
 
 .bg-home{
-  @apply w-screen h-screen bg-[url('/src/assets/img/astronaut.png')] bg-cover bg-no-repeat
+  @apply w-screen h-screen bg-[url('/src/assets/img/planet.jpg')] bg-cover bg-no-repeat
 }
 
 .about-banner  {
@@ -18,7 +18,15 @@ body{
 @apply text-white absolute top-12 right-7 w-36 h-2/5 rounded-3xl bg-gradient-to-tr from-slate-900 to-slate-200 z-20
 }
 .menu-item{
-  @apply hover:text-lightgreen font-semibold
+  @apply hover:text-orange-500 font-semibold
+}
+
+.container-presentation {
+  margin-top: 400px;
+}
+
+.bg-aboutme-container {
+  background-color: #0a0e15;
 }
 
 .refresh-menu-item{
@@ -26,8 +34,12 @@ body{
 }
 
 .photo-animation{
-  box-shadow: 0 0 0 1px #6ef6e5;
+  box-shadow: 0 0 0 1px #f87315;
   animation: border-animation 1.8s infinite linear
+}
+
+.about-space-ship {
+  width: 80%;
 }
 
 .refresh {
@@ -65,21 +77,21 @@ a {
 
 @keyframes border-animation {
   0% {
-    box-shadow: 0 0 0 1px #6ef6e5;
+    box-shadow: 0 0 0 1px #f87315;
   }
 
   50% {
-    box-shadow: 0 0 0 5px #6ef6e5;
+    box-shadow: 0 0 0 5px #f87315;
   }
 
   100% {
-    box-shadow: 0 0 0 1px #6ef6e5;
+    box-shadow: 0 0 0 1px #f87315;
   }
 }
 
 .project-card__body {
   background: linear-gradient(#111111, #111111) padding-box,
-              linear-gradient(145deg, transparent 35%,#171717, #6ef6e5) border-box;
+              linear-gradient(145deg, transparent 35%,#171717, #f87315) border-box;
   border: 2px solid transparent;
   transform-origin: right bottom;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
@@ -104,6 +116,8 @@ a {
   cursor: pointer;
   transition: all 0.3s;
 }
+
+
 
 .svgContainer {
   width: 100%;
@@ -161,7 +175,23 @@ a {
   backdrop-filter: blur(4px);
 }
 
+@keyframes scrolling {
+  to {
+  transform: translate(calc(-50% - 0.5rem));
+   }
+  }
 
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    /* animation: scrolling Linear; */
+    animation: scrolling linear;
+    animation-timeline: scroll(root);
+  }
+
+  .scroller[data-direction="right"] .scroller__inner {
+    animation-direction: reverse;
+  }
 .footer,
 .project-details__technologies,
 .project-details__improobe,
