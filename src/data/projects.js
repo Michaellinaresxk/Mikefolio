@@ -17,6 +17,7 @@ import {
 export const projects = [
 	{
 		id: 1,
+		category: "Apps",
 		title: "Words Translator",
 		title1: "Words",
 		title2: "Translator",
@@ -68,6 +69,7 @@ export const projects = [
 	},
 	{
 		id: 3,
+		category: "Websites",
 		title: "Weight on Space",
 		title1: "Weight on",
 		title2: "Space",
@@ -98,6 +100,7 @@ export const projects = [
 
 	{
 		id: 4,
+		category: "UI Designs",
 		title: "Chat Room",
 		title1: "Chat",
 		title2: "Room",

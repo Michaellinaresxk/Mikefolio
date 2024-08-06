@@ -7,11 +7,7 @@ import { ExperienceSection } from "../components/stateless/ExperienceSection";
 import { WhatIUse } from "../components/stateless/WhatIUse";
 import WhatIDo from "../components/stateless/WhatIDo";
 
-import {
-  about_background_image,
-  myPicture,
-  spaceShip,
-} from "../assets/img/index";
+import { about_background_image, spaceShip } from "../assets/img/index";
 import { Link } from "react-router-dom";
 
 const About = () => {
