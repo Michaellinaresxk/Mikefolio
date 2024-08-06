@@ -16,6 +16,13 @@ body{
   background-size: cover;
 }
 
+.bg-projects{
+  /* @apply w-screen bg-[url('/src/assets/img/jupiter-1.jpg')] bg-cover bg-no-repeat; */
+  /* background-image: url("./assets/img/"); */
+  background-position: center;
+}
+
+
 .bg-about-text {
   background-color: #000000;
 }
