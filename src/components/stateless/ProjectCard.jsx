@@ -14,7 +14,7 @@ const ProjectCard = ({
   return (
     <>
       <div className="project-card__body text-white rounded-lg mt-10 overflow-hidden mx-auto ">
-        <Link to={`/proyects/${id}`}>
+        <Link to={`/projects/${id}`}>
           <img src={image} className="w-full" />
         </Link>
 

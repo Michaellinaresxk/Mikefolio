@@ -1,18 +1,18 @@
 import Menu from "../components/stateless/Menu";
 import CallToAction from "../components/stateless/CallToAction";
 import Footer from "../components/stateless/Footer";
-import { FiMonitor } from "react-icons/fi"; // Importa el icono que prefieras
-import { MdDeveloperMode } from "react-icons/md";
 import { AboutMeText } from "../components/stateless/AboutMeText";
 import { ProfileCvSection } from "../components/stateless/ProfileCvSection";
 import { ExperienceSection } from "../components/stateless/ExperienceSection";
 import { WhatIUse } from "../components/stateless/WhatIUse";
+import WhatIDo from "../components/stateless/WhatIDo";
 
 import {
   about_background_image,
   myPicture,
   spaceShip,
 } from "../assets/img/index";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -43,12 +43,12 @@ const About = () => {
               </h1>
             </div>
             <div className="mt-8 md:mt-12 lg:mt-16">
-              <a
-                href="#latest-project"
+              <Link
+                to={`/projects`}
                 className="inline-block text-sm md:text-base lg:text-lg font-medium leading-loose text-indigo-200 hover:text-indigo-100"
               >
                 Latest Project <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -63,93 +63,11 @@ const About = () => {
 
         <AboutMeText />
         <ExperienceSection />
+        <div className="mt-20">
+          <CallToAction />
+        </div>
         <ProfileCvSection resumeLink="/path-to-your-resume.pdf" />
-        <CallToAction />
-        <section>
-          <div className="flex justify-center mt-20">
-            <h2 className="text-7xl font-bold mt-10">
-              What i <span className="font-normal text-orange-500">Do</span>
-            </h2>
-          </div>
-          <div className="container flex flex-col px-6  mx-auto space-y-6 lg:space-y-0 lg:flex-row lg:items-center">
-            <div className="flex items-center justify-center w-full lg:w-1/2">
-              <img
-                className="object-cover w-full h-full max-w-lg mx-auto"
-                src={myPicture}
-                alt="Descriptive Alt Text"
-              />
-            </div>
-            <div className="w-full lg:w-1/2">
-              <div>
-                <h2 className="text-3xl font-bold tracking-wide text-gray-800 text-white lg:text-5xl">
-                  Creting modern and innovative design,
-                </h2>
-
-                <div className="mt-8 space-y-5">
-                  <p className="flex items-center -mx-2 text-gray-700s">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 mx-2 text-orange-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <span className="mx-2 text-2xl text-white">
-                      Easy to use
-                    </span>
-                  </p>
-
-                  <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 mx-2 text-orange-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <span className="mx-2 text-2xl text-white">
-                      Esthetically pleasing
-                    </span>
-                  </p>
-
-                  <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 mx-2 text-orange-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <span className="mx-2 text-2xl text-white">
-                      Easy to Use
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <WhatIDo />
         <WhatIUse />
       </section>
       <Footer text="Copyright Michaelxk ©" year={2024} />

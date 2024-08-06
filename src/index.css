@@ -4,14 +4,28 @@
 
 body{
   overflow-x: hidden;
+  background-color: #0c0f17;
 }
 
 .bg-home{
-  @apply w-screen h-screen bg-[url('/src/assets/img/planet.jpg')] bg-cover bg-no-repeat
+  /* @apply w-screen bg-[url('/src/assets/img/jupiter-1.jpg')] bg-cover bg-no-repeat; */
+  background-image: url("./assets/img/jupititer-1.jpg");
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  background-size: cover;
+}
+
+.bg-about-text {
+  background-color: #000000;
+}
+
+.bg-about-section {
+  @apply w-screen h-screen bg-[url('/src/assets/img/star-arrow.jpg')] bg-cover bg-no-repeat;
 }
 
 .about-banner  {
-  background-color: #000;;
+  background-color: #000;
 }
 
 .menu-container{
@@ -26,7 +40,7 @@ body{
 }
 
 .bg-aboutme-container {
-  background-color: #0a0e15;
+  background-color: #0c0f17;
 }
 
 .refresh-menu-item{

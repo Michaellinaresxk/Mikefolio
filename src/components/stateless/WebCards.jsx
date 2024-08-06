@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-export const WebCards = ({ title, year, imageUrl, visitUrl }) => {
-  const [bgColor, setBgColor] = useState(""); // your existing color logic
+export const WebCards = ({ title, imageUrl, visitUrl }) => {
+  const [bgColor, setBgColor] = useState("");
 
   useEffect(() => {
     const colors = [
@@ -19,32 +19,29 @@ export const WebCards = ({ title, year, imageUrl, visitUrl }) => {
 
   return (
     <div
-      className={` ${bgColor} rounded-xl overflow-hidden max-h-700px`} // Example with maximum height
-      style={{ borderRadius: "30px" }}
+      className={`rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105`}
+      style={{ backgroundColor: "#111111", width: "420px" }}
     >
-      <div className="flex justify-between px-8 py-6">
-        <div>
-          <div className="font-bold text-2xl mb-4">{title}</div>
-          <p className="text-gray-700 text-lg">{year}</p>
-        </div>
+      <div className="relative">
+        <img
+          className="w-full h-50 object-cover"
+          src={imageUrl}
+          alt={`Project titled ${title}`}
+        />
+        <div
+          className={`absolute top-0 left-0 w-full h-full ${bgColor} opacity-20`}
+        />
+      </div>
+      <div className="p-4">
+        <h3 className="text-2xl font-semibold mb-2">{title}</h3>
         <a
           href={visitUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-500 text-white font-bold py-3 px-6 rounded "
+          className="inline-block bg-gradient-to-r from-gray-700 to-gray-900 text-white font-bold py-2 px-4 rounded-full hover:from-gray-600 hover:to-gray-800 transition-colors"
         >
-          Here
+          Visit
         </a>
-      </div>
-      <div
-        className="flex justify-center items-center p-4 rounded-lg overflow-hidden"
-        style={{ borderRadius: "10px" }}
-      >
-        <img
-          className=" self-center rounded-lg"
-          src={imageUrl}
-          alt={`Project titled ${title}`}
-        />
       </div>
     </div>
   );

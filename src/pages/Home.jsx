@@ -3,7 +3,8 @@ import Menu from "../components/stateless/Menu";
 import WebsSection from "../components/stateless/WebsSection";
 import { AboutMeText } from "../components/stateless/AboutMeText";
 import CallToAction from "../components/stateless/CallToAction";
-
+import Footer from "../components/stateless/Footer";
+import WhatIDo from "../components/stateless/WhatIDo";
 const Home = () => {
   return (
     <>
@@ -22,8 +23,11 @@ const Home = () => {
         </div>
       </main>
       <AboutMeText />
+      <WhatIDo />
       <WebsSection />
+
       <CallToAction />
+      <Footer text="Copyright Michaelxk ©" year={2024} />
     </>
   );
 };
