@@ -4,8 +4,8 @@ export const AboutMeText = () => {
   return (
     <>
       <main className="h-screen flex bg-aboutme-container justify-center items-center flex-col">
-        <div className="flex items-center pl-5 lg:pl-20">
-          <div className="w-full lg:w-1/2">
+        <div className="flex items-center pl-20">
+          <div className="w-full lg:w-7/12">
             <h2 className="text-3xl font-bold tracking-wide text-white lg:text-6xl mb-4">
               I am,
             </h2>
@@ -21,7 +21,7 @@ export const AboutMeText = () => {
           </div>
         </div>
 
-        <div className="mt-10 pl-5 lg:pl-20">
+        <div className="mt-10 pl-20 lg:pl-20">
           <div className="w-full lg:w-1/2">
             <p className="text-xl lg:text-3xl text-white">
               My journey as a Developer started when I noticed that I can bring
