@@ -5,6 +5,7 @@ import { AboutMeText } from "../components/stateless/AboutMeText";
 import CallToAction from "../components/stateless/CallToAction";
 import Footer from "../components/stateless/Footer";
 import WhatIDo from "../components/stateless/WhatIDo";
+
 const Home = () => {
   return (
     <>

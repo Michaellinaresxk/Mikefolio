@@ -3,6 +3,7 @@ import { WebCards } from "./WebCards";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { websites } from "../../data/websites";
 
 const WebsSection = () => {
   const settings = {
@@ -40,7 +41,7 @@ const WebsSection = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 ">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 ">
       <div className="flex flex-col md:flex-row md:items-center gap-10">
         <div className="w-full  md:w-4/12">
           <h2 className="text-5xl font-bold mb-6">
@@ -58,15 +59,9 @@ const WebsSection = () => {
         </div>
         <div className="w-full md:w-8/12">
           <Slider {...settings}>
-            {[...Array(3)].map((_, i) => (
-              <div key={i} className="p-4">
-                <WebCards
-                  title={`Project ${i + 1}`}
-                  imageUrl={`https://via.placeholder.com/300?text=Project+${
-                    i + 1
-                  }`}
-                  visitUrl="#"
-                />
+            {websites.map((web) => (
+              <div key={web.id} className="p-4">
+                <WebCards title={web.title} imageUrl={web.CardImage} />
               </div>
             ))}
           </Slider>

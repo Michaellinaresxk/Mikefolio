@@ -4,7 +4,6 @@
 
 body{
   overflow-x: hidden;
-  background-color: #0c0f17;
 }
 
 .bg-home{
@@ -16,12 +15,9 @@ body{
   background-size: cover;
 }
 
-.bg-projects{
-  /* @apply w-screen bg-[url('/src/assets/img/jupiter-1.jpg')] bg-cover bg-no-repeat; */
-  /* background-image: url("./assets/img/"); */
-  background-position: center;
-}
-
+/* .bg-projects {
+  background-color: #fff;
+} */
 
 .bg-about-text {
   background-color: #000000;
@@ -111,8 +107,6 @@ a {
 }
 
 .project-card__body {
-  background: linear-gradient(#111111, #111111) padding-box,
-              linear-gradient(145deg, transparent 35%,#171717, #f87315) border-box;
   border: 2px solid transparent;
   transform-origin: right bottom;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);

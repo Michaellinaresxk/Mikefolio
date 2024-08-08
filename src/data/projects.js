@@ -43,6 +43,7 @@ export const projects = [
 	},
 	{
 		id: 2,
+		category: "Apps",
 		title: "Gosia Recipe",
 		title1: "Gosia",
 		title2: "Recipe",
@@ -69,7 +70,7 @@ export const projects = [
 	},
 	{
 		id: 3,
-		category: "Websites",
+		category: "Apps",
 		title: "Weight on Space",
 		title1: "Weight on",
 		title2: "Space",
@@ -100,7 +101,7 @@ export const projects = [
 
 	{
 		id: 4,
-		category: "UI Designs",
+		category: "Apps",
 		title: "Chat Room",
 		title1: "Chat",
 		title2: "Room",
@@ -128,6 +129,7 @@ export const projects = [
 
 	{
 		id: 5,
+		category: "Apps",
 		title: "Weather App",
 		title1: "Weather",
 		title2: "App",
