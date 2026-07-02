@@ -145,7 +145,7 @@ export const projects = [
     description:
       "Search for recipes using natural language queries, such as 'gluten free brownies without sugar' or 'low fat vegan cupcakes.' You can automatically calculate the nutritional information for any recipe, visualize ingredient lists, etc..",
     CardImage: project2,
-    projectLinks: 'https://deploy-preview-8--gosias-s-recipe.netlify.app/',
+    projectLinks: 'https://gosias-s-recipe.netlify.app/',
     repoLink: 'https://github.com/Michaellinaresxk/Gosias-s-Recipe',
     repoProvider: 'GitHub',
     technologies: [
